@@ -9,7 +9,7 @@ export const generateActivity = () => {
     dispatch({ type: FETCH_ACTIVITY_IDEA_START })
 
     axios
-      .get('http://www.boredapi.com/api/activity/')
+      .get('https://www.boredapi.com/api/activity/')
       .then(res => {
         dispatch({ type: FETCH_ACTIVITY_IDEA_SUCCESS, payload: res.data })
       })
